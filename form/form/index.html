@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>form</title>
+	</head>
+	<body>
+		<form class="form" method="GET" action="">
+			<div class="form__field">
+				<label class="form__field-label" for="form-name">Ваше имя</label>
+				<input class="form__field-text" id="form-name" type="text" name="name" placeholder="Введите Ваше имя">
+			</div>
+			<div class="form__field">
+				<label class="form__field-label" for="form-email">Электронный адрес</label>
+				<input class="form__field-text" id="form-email" type="text" name="email" placeholder="Ваша эл. почта"required>
+			</div>
+			<div class="form__field">
+				<label class="form__field-label" for="form-number">Ваш номер телефона</label>
+				<input class="form__field-text" id="form-tel" type="tel" name="tel" placeholder="Ваш номер телефона" required="">
+			</div>
+				<p class="form__subtitle">Выберите способ доставки:</p>
+				<div class="form__field">
+				<label class="form__field-label form__field-label-checkbox" for="form-sport">Курьер</label>
+				<input class="form__field-checkbox" id="form-courier" type="checkbox" name="courier">
+			</div>
+			<div class="form__field">
+				<label class="form__field-label form__field-label-checkbox" for="form-fashion">Самовывоз</label>
+				<input class="form__field-checkbox" id="form-service" type="checkbox" name="service">
+			</div>
+			<div class="form__field">
+				<label class="form__field-label form__field-label-checkbox" for="form-cinema">Пункт выдачи</label>
+				<input class="form__field-checkbox" id="form-point" type="checkbox" name="point">
+			</div>
+			<div class="form__field">
+				<label class="form__field-label" for="form-email">Ваш адрес</label>
+				<input class="form__field-text" id="form-email" type="text" name="email" placeholder="Если, Вы выбрали способ доставки - курьер, то укажите Ваш адрес"required>
+			</div>
+				<p class="form__subtitle">Удобен ли Вам наш сервис?</p>
+				<select class="form__select-menu">
+					<option value="null" selected="">Не выбрано</option>
+					<option value="yes">Да</option>
+					<option value="no">Нет</option>
+				</select>
+			<div>
+				<p class="form__subtitle">Ваши рекомендации по улучшению сервиса:</p>
+				<textarea class="form__textarea" rows="5" cols="65" placeholder="Введите текст"></textarea>
+		    </div>
+			<div class="form__field">
+				<input class="form__field-button" type="submit" name="submit" value="Отправить">
+			</div>
+		</form>
+	</body>
+</html>
